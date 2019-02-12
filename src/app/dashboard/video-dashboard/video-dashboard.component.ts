@@ -7,12 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideoDashboardComponent implements OnInit {
   videoListData = videoData;
+  videoToPlay: any;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  setVideoToPlay($event) {
+    this.videoToPlay = $event;
+  }
 }
 
 const videoData = [

@@ -1,4 +1,4 @@
 
-<app-video-list [videoList]="videoListData"></app-video-list>
-<app-video-player></app-video-player>
+<app-video-list (videoSelected)="setVideoToPlay($event)" [videoList]="videoListData"></app-video-list>
+<app-video-player [video]="videoToPlay"></app-video-player>
 <app-stat-filters></app-stat-filters>
